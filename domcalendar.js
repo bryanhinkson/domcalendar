@@ -9,6 +9,9 @@ let day29 = document.getElementById('day29');
 let day30 = document.getElementById('day30');
 let day31 = document.getElementById('day31');
 
+let selectedDay = "";
+let selectedDate = "";
+
 
 const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
@@ -74,6 +77,13 @@ nextMonth.addEventListener('click', function () {
     generateMonth();
 });
 
+days.addEventListener('click', function(e){
+    selectedDay = e.target.innerText;
+    selectedDate = new Date(date.getFullYear(), date.getMonth(), selectedDay);
+});
+
+
+// This is used to initialize the first month
 (function() {
     generateMonth();
 })();
