@@ -17,3 +17,12 @@ extended.
 
 Add Event listeners to whatever you want to provide additional functionality.
 
+# Usage
+There are two versions of this:
+ 
+One has just the calendar with days. (Use domcalendar.js and domcalendar.html with domcalendar.css)
+This is to be used for a user to select a date.  The result will be stored in selectedDate.
+
+The second version is where you want a user to select a date and then select an hour.
+Use domCalendarWithTimes.js, domCalendarWithTimes.html, and domcalendar.css for this setup.  
+(This should be customized to your particular needs)
